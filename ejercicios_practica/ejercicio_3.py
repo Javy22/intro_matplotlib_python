@@ -27,11 +27,17 @@ if __name__ == '__main__':
 
     # Alumno: Graficar la función utilizando "scatter"
     # utilizando "x" e "y" ya disponible
+    
+    fig = plt.figure()
+    fig.suptitle("Scatter plot", fontsize=18)
+    ax = fig.add_subplot()
 
     # Colocar la leyenda y el label con el nombre de la función
-
     # Elegir un marker a elección
+    ax.scatter(x, y, c="gray", marker=">", label="Tanh")
+    ax.legend()
+    ax.grid() 
 
     # Crear acá su gráfico
-
+    plt.show()
     print("terminamos")
